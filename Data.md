@@ -1,5 +1,5 @@
 # Data sources
-The data are gathered from various sources. Most come from [Stortinget's own API](https://data.stortinget.no), a part of which were structured by [Holder de ord](https://www.holderdeord.no/portal) (see last seven variables of the table below). Additionally, several variables were scraped from the .html of various places on [Stortingets web page](https://stortinget.no). Variables on the cabinets and ministers are based on [Søyland (2016)](TBA)
+The data are gathered from various sources. Most come from [Stortinget's own API](https://data.stortinget.no), a part of which were structured by [Holder de ord](https://www.holderdeord.no/portal) (see last seven variables of the table below). Additionally, several variables were scraped from the .html of various places on [Stortingets web page](https://stortinget.no). Variables on the cabinets and ministers are based on [Søyland (forthcoming)](TBA)
 
 # Variable description
 
@@ -18,12 +18,12 @@ The data are gathered from various sources. Most come from [Stortinget's own API
 | list_number                         | position on the party list at the last election                                                              | https://www.stortinget.no/ |
 | party_id                            | unique id for a party                                                                                        | https://data.stortinget.no |
 | party_name                          | full name of the party                                                                                       | https://data.stortinget.no |
-| party_role                          | parliament role of the party (cabin et, opposition, support), NA for presidents                               | Søyland (2016) |
-| party_seats                         | number of seats in parliament for the speaker's party                                                        | Søyland (2016) |
-| cabinet_short                       | pet name for the current cabinet (also usable as an id)                                                      | Søyland (2016) |
-| cabinet_start                       | start date of the cabinet                                                                                    | Søyland (2016) |
-| cabinet_composition                 | composition of the cabinet (Coalition, Single-party)                                                         | Søyland (2016) |
-| cabinet_end                         | end date of the cabinet                                                                                      | Søyland (2016) |
+| party_role                          | parliament role of the party (cabin et, opposition, support), NA for presidents                               | Søyland (forthcoming) |
+| party_seats                         | number of seats in parliament for the speaker's party                                                        | Søyland (forthcoming) |
+| cabinet_short                       | pet name for the current cabinet (also usable as an id)                                                      | Søyland (forthcoming) |
+| cabinet_start                       | start date of the cabinet                                                                                    | Søyland (forthcoming) |
+| cabinet_composition                 | composition of the cabinet (Coalition, Single-party)                                                         | Søyland (forthcoming) |
+| cabinet_end                         | end date of the cabinet                                                                                      | Søyland (forthcoming) |
 | rep_gender                          | gender                                                                                                       | https://data.stortinget.no |
 | rep_birth                           | date of birth                                                                                                | https://data.stortinget.no |
 | rep_death                           | date of death                                                                                                | https://data.stortinget.no |
