@@ -34,7 +34,7 @@ You can download the data from [emanuel.at.ifi.uio.no/ton.data.tar.gz](http://em
 
 On most UNIX systems, you can type the following in your terminal:
 ```
-git clone git@github.com:emanlapponi/talk-of-norway.git
+git clone https://github.com/emanlapponi/talk-of-norway
 cd talk-of-norway
 wget http://emanuel.at.ifi.uio.no/ton.data.tar.gz
 tar -xzf ton.data.tar.gz
