@@ -80,11 +80,11 @@ The data are gathered from various sources. Most come from [Stortinget's own API
 | related_case_title_short            | short titles of related cases                                                                                | https://data.stortinget.no |
 | keyword                             | One word keyword for debate                                                                                  | https://stortinget.no |
 | keywords                            | All keywords for debate                                                                                      | https://data.stortinget.no |
-| nob_nno                             | language identifier (bokmål/nynorsk)                                                                         |  |
-| transcript                          | a date variable that distiguish day and night meetings                                                       | https://data.stortinget.no (holderdeord) |
-| order                               | speech order in a given day                                                                                  | https://data.stortinget.no (holderdeord) |
-| time                                | timestamp of the speech                                                                                      | https://data.stortinget.no (holderdeord) |
-| session                             | parliament session                                                                                           | https://data.stortinget.no (holderdeord) |
-| date                                | date of the speech                                                                                           | https://data.stortinget.no (holderdeord) |
-| title                               | title (representative, president, minister etc)                                                              | https://data.stortinget.no (holderdeord) |
-| text                                | the speech                                                                                                   | https://data.stortinget.no (holderdeord) |
+| language                             | language identifier (bokmål/nynorsk)                                                                        | langid.py |
+| transcript                          | a date variable that distiguish day and night meetings                                                       | https://data.stortinget.no (via holderdeord) |
+| order                               | speech order in a given day                                                                                  | https://data.stortinget.no (via holderdeord) |
+| time                                | timestamp of the speech                                                                                      | https://data.stortinget.no (via holderdeord) |
+| session                             | parliament session                                                                                           | https://data.stortinget.no (via holderdeord) |
+| date                                | date of the speech                                                                                           | https://data.stortinget.no (via holderdeord) |
+| title                               | title (representative, president, minister etc)                                                              | https://data.stortinget.no (via holderdeord) |
+| text                                | the speech                                                                                                   | https://data.stortinget.no (via holderdeord) |
