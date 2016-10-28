@@ -1,9 +1,9 @@
 # Data sources
-The data are gathered from various sources. Most come from [Stortinget's own API](https://data.stortinget.no), and of these seven were structured by [Holder de ord](https://www.holderdeord.no/portal) (see last seven variables of the table below). Additionally, severeal variables were scraped from the .html of various places on [Stortingets web page](https://stortinget.no). Variables on the cabinets and ministers are based on [Søyland (2016)](TBA)
+The data are gathered from various sources. Most come from [Stortinget's own API](https://data.stortinget.no), a part of which were structured by [Holder de ord](https://www.holderdeord.no/portal) (see last seven variables of the table below). Additionally, several variables were scraped from the .html of various places on [Stortingets web page](https://stortinget.no). Variables on the cabinets and ministers are based on [Søyland (2016)](TBA)
 
 # Variable description
 
-| Variable name                       | Variable description                                                                                         | Source |
+| Variable name                       | Variable description                                                                                          | Source |
 |:------------------------------------|:-------------------------------------------------------------------------------------------------------------|:-------|
 | id                                  | unique id for a speech                                                                                       | |
 | url_rep_id                          | unique id for representatives in online urls (NA for presidents)                                             | https://www.stortinget.no/ |
@@ -18,7 +18,7 @@ The data are gathered from various sources. Most come from [Stortinget's own API
 | list_number                         | position on the party list at the last election                                                              | https://www.stortinget.no/ |
 | party_id                            | unique id for a party                                                                                        | https://data.stortinget.no |
 | party_name                          | full name of the party                                                                                       | https://data.stortinget.no |
-| party_role                          | parliament role of the party (cabinet, opposition, support), NA for presidents                               | Søyland (2016) |
+| party_role                          | parliament role of the party (cabin et, opposition, support), NA for presidents                               | Søyland (2016) |
 | party_seats                         | number of seats in parliament for the speaker's party                                                        | Søyland (2016) |
 | cabinet_short                       | pet name for the current cabinet (also usable as an id)                                                      | Søyland (2016) |
 | cabinet_start                       | start date of the cabinet                                                                                    | Søyland (2016) |
