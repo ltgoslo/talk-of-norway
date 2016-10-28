@@ -19,10 +19,11 @@ For instance:
 2    medrepresentanter    medrepresentant    subst    appell|mask|ub|fl
 3    !                    $!                 clb      <<<|<utrop>|<<<
 ```
+Note that the moprhological features in the fourth column are their selves separated with the pipe (`|`) character.
 
 ## Sources
 
-Linguistic annotations are automatically obtained using [langid.py](https://github.com/saffsd/langid.py) for language idenification and the [Oslo-Bergen tagger](https://github.com/noklesta/The-Oslo-Bergen-Tagger) for morphological analysis.
+Linguistic annotations are automatically obtained using [langid.py](https://github.com/saffsd/langid.py) for language idenification and the [Oslo-Bergen tagger](https://github.com/noklesta/The-Oslo-Bergen-Tagger) for morphological analysis as implemented in the [Language Analysis Portal (LAP)](https://lap.clarino.uio.nohttps://lap.clarino.uio.no).
 
 Metadata was pulled from several sources, utilizing a dump of the [holder-de-ord](https://www.holderdeord.no/portal) database as a starting point and adding further information from the [Storting api](https://data.stortinget.no/), scraping the [Storting web pages](Storting web pages) and integrating data from [Søyland (2016)](???).
 See [Data.md](Data.md) for more information on the variables.
@@ -30,3 +31,17 @@ See [Data.md](Data.md) for more information on the variables.
 ## Get the data
 
 You can download the data from [url](url). The recommended way to stay up to date with this repository is to clone this repository and unpack the downloaded archive to its top-level directory.
+
+## How to cite
+
+Publications connected to this dataset are forthcoming. For the time being, please use the following bit of bibtex to cite this work:
+
+```
+@online{WinNT,
+  author = {S{\o}yland, Martin and Lapponi, Emanuele},
+  title = {Talk of Norway},
+  year = 2016,
+  url = {https://github.com/emanlapponi/talk-of-norway},
+  urldate = {2016-10-29}
+}
+```
