@@ -37,7 +37,7 @@ You can download the data from [url](url). The recommended way to stay up to dat
 Publications connected to this dataset are forthcoming. For the time being, please use the following bit of bibtex to cite this work:
 
 ```
-@online{WinNT,
+@online{Soy:Lap:16,
   author = {S{\o}yland, Martin and Lapponi, Emanuele},
   title = {Talk of Norway},
   year = 2016,
