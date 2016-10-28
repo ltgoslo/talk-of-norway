@@ -32,6 +32,15 @@ See [Data.md](Data.md) for more information on the variables.
 
 You can download the data from [emanuel.at.ifi.uio.no/ton.data.tar.gz](http://emanuel.at.ifi.uio.no/ton.data.tar.gz). The recommended way to stay up to date with this repository is to clone this repository and unpack the downloaded archive to its top-level directory.
 
+On most UNIX systems, you can type the following in your terminal:
+```
+git clone git@github.com:emanlapponi/talk-of-norway.git
+cd talk-of-norway
+wget http://emanuel.at.ifi.uio.no/ton.data.tar.gz
+tar -xzf ton.data.tar.gz
+rm ton.data.tar.gz
+```
+
 ## How to cite
 
 Publications connected to this dataset are forthcoming. For the time being, please use the following bit of bibtex to cite this work:
