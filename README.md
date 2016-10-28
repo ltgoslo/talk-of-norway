@@ -30,7 +30,7 @@ See [Data.md](Data.md) for more information on the variables.
 
 ## Get the data
 
-You can download the data from [emanuel.at.ifi.uio.no/ton.data.tar.gz](http://emanuel.at.ifi.uio.no/ton.data.tar.gz). The recommended way to stay up to date with this repository is to clone this repository and unpack the downloaded archive to its top-level directory.
+You can download the data from [emanuel.at.ifi.uio.no/ton.data.tar.gz](http://emanuel.at.ifi.uio.no/ton.data.tar.gz). The recommended way to stay up to date with this repository is to clone it and unpack the downloaded archive to its top-level directory.
 
 On most UNIX systems, you can type the following in your terminal:
 ```
