@@ -19,7 +19,7 @@ For instance:
 2    medrepresentanter    medrepresentant    subst    appell|mask|ub|fl
 3    !                    $!                 clb      <<<|<utrop>|<<<
 ```
-Note that the moprhological features in the fourth column are their selves separated with the pipe (`|`) character.
+Note that the morphological features in the fourth column are their selves separated with the pipe (`|`) character.
 
 ## Sources
 
@@ -30,7 +30,7 @@ See [Data.md](Data.md) for more information on the variables.
 
 ## Get the data
 
-You can download the data from [url](url). The recommended way to stay up to date with this repository is to clone this repository and unpack the downloaded archive to its top-level directory.
+You can download the data from [emanuel.at.ifi.uio.no/ton.data.tar.gz](https://emanuel.at.ifi.uio.no/ton.data.tar.gz). The recommended way to stay up to date with this repository is to clone this repository and unpack the downloaded archive to its top-level directory.
 
 ## How to cite
 
