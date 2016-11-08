@@ -59,5 +59,5 @@ Publications connected to this dataset are forthcoming. For the time being, plea
 
 ## License
 
-Norwegian License for Open Government Data (NLOD)
+Norwegian [License for Open Government Data (NLOD)](LICENSE)
 
