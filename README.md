@@ -30,13 +30,13 @@ See [Data.md](Data.md) for more information on the variables.
 
 ## Get the data
 
-You can download the data from [emanuel.at.ifi.uio.no/ton.data.tar.gz](http://emanuel.at.ifi.uio.no/ton.data.tar.gz). The recommended way to stay up to date with this repository is to clone it and unpack the downloaded archive to its top-level directory.
+You can download the data from [http://ltr.uio.no/ton/ton.data.10.tgz](http://ltr.uio.no/ton/ton.data.10.tgz). The recommended way to stay up to date with this repository is to clone it and unpack the downloaded archive to its top-level directory.
 
 On most UNIX systems, you can type the following in your terminal:
 ```
 git clone https://github.com/emanlapponi/talk-of-norway
 cd talk-of-norway
-wget http://emanuel.at.ifi.uio.no/ton.data.tar.gz
+wget http://ltr.uio.no/ton/ton.data.10.tgz
 tar -xzf ton.data.tar.gz
 rm ton.data.tar.gz
 ```
@@ -57,5 +57,5 @@ Publications connected to this dataset are forthcoming. For the time being, plea
 
 ## License
 
-Norwegian Licence for Open Government Data (NLOD)
+Norwegian License for Open Government Data (NLOD)
 
