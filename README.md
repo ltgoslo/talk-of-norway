@@ -1,10 +1,12 @@
 # talk-of-norway
 
-This repository makes available the Talk of Norway (TON) dataset, a collection of Norwegian parliament speeches from the 1998-1999 to 2015-2016 sessions. Every speech is richly annotated with metadata pulled from different sources, and augmented with sentence, token, lemma, part-of-speech and morphological feature annotations.
+This repository makes available the 1.0 release of the Talk of Norway (TON) dataset, a collection of Norwegian parliament speeches from the 1998-1999 to 2015-2016 sessions. Every speech is richly annotated with metadata pulled from different sources, and augmented with sentence, token, lemma, part-of-speech and morphological feature annotations.
 
 This work is inspired by the [Talk of Europe CLARIN campus](http://www.talkofeurope.eu/), and aims primarily at facilitating experimentation at the crossroads between quantitative Political Science and Natural Language Processing. The dataset is currently the core object of study of an interdisciplinary project involving the departments of Political Science and Informatics of the University of Oslo.
 
-## Dataset
+For more information on the Talk of Norway project and its partecipants, please see the UiO project pages at [https://www.mn.uio.no/ifi/english/research/projects/ton/index.html](https://www.mn.uio.no/ifi/english/research/projects/ton/index.html)
+
+## Dataset 1.0
 
 The data is split in two main parts: the `./data/ton.csv` file containing metadata (see [Data.md](Data.md) for a description of the available variables) along with the raw text of the speeches, and the `./data/annotations/` folder containing the linguistic annotations of the speeches. The annotations in this folder are linked to their respective metadata row in the csv file by way of their file name, which is the same as the id variable.
 
