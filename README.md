@@ -39,7 +39,7 @@ On most UNIX systems, you can type the following in your terminal:
 git clone https://github.com/emanlapponi/talk-of-norway
 cd talk-of-norway
 wget http://ltr.uio.no/ton/ton.data.10.tgz
-tar -xzf ton.data.tar.gz
+tar -xzf ton.data.tar.10.gz
 rm ton.data.tar.gz
 ```
 
