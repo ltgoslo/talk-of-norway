@@ -28,7 +28,7 @@ Note that the morphological features in the fourth column are their selves separ
 Linguistic annotations are automatically obtained using [langid.py](https://github.com/saffsd/langid.py) for language identification and the [Oslo-Bergen tagger](https://github.com/noklesta/The-Oslo-Bergen-Tagger) for morphological analysis as implemented in the [Language Analysis Portal (LAP)](https://lap.clarino.uio.nohttps://lap.clarino.uio.no).
 
 Metadata was pulled from several sources, utilizing a dump of the [holder-de-ord](https://www.holderdeord.no/portal) database as a starting point and adding further information from the [Storting api](https://data.stortinget.no/), scraping the [Storting web pages](Storting web pages) and integrating data from [Søyland (forthcoming)](https://github.com/martigso/ministersNor).
-See [Data.md](Data.md) for more information on the variables.
+See [Data.md](Data.md) for more information on the variables. 
 
 ## Get the data
 
