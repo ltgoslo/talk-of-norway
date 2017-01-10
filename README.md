@@ -52,7 +52,7 @@ Publications connected to this dataset are forthcoming. For the time being, plea
   author = {S{\o}yland, Martin G. and Lapponi, Emanuele},
   title = {Talk of Norway},
   year = 2016,
-  url = {https://github.com/emanlapponi/talk-of-norway},
+  url = {https://github.com/ltgoslo/talk-of-norway},
   urldate = {2016-10-29}
 }
 ```
