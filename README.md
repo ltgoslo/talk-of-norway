@@ -28,7 +28,7 @@ Note that the morphological features in the fourth column are their selves separ
 Linguistic annotations are automatically obtained using [langid.py](https://github.com/saffsd/langid.py) for language identification and the [Oslo-Bergen tagger](https://github.com/noklesta/The-Oslo-Bergen-Tagger) for morphological analysis as implemented in the [Language Analysis Portal (LAP)](https://lap.clarino.uio.nohttps://lap.clarino.uio.no).
 
 Metadata was pulled from several sources, utilizing a dump of the [holder-de-ord](https://www.holderdeord.no/portal) database as a starting point and adding further information from the [Storting api](https://data.stortinget.no/), scraping the [Storting web pages](Storting web pages) and integrating data from [Søyland (forthcoming)](https://github.com/martigso/ministersNor).
-See [Data.md](Data.md) for more information on the variables. 
+See [Data.md](Data.md) for more information on the variables.
 
 ## Get the data
 
@@ -39,8 +39,8 @@ On most UNIX systems, you can type the following in your terminal:
 git clone https://github.com/emanlapponi/talk-of-norway
 cd talk-of-norway
 wget http://ltr.uio.no/ton/ton.data.10.tgz
-tar -xzf ton.data.10.tar.gz
-rm ton.data.tar.gz
+tar -xzf ton.data.10.tgz
+rm ton.data.tgz
 ```
 
 ## How to cite
@@ -60,4 +60,3 @@ Publications connected to this dataset are forthcoming. For the time being, plea
 ## License
 
 Norwegian [License for Open Government Data (NLOD)](LICENSE)
-
