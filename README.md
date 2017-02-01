@@ -1,10 +1,10 @@
 # talk-of-norway
 
-This repository makes available the v1.0 release of the Talk of Norway (TON) dataset, a collection of Norwegian parliament speeches from the 1998-1999 to 2015-2016 sessions. Every speech is richly annotated with metadata pulled from different sources, and augmented with sentence, token, lemma, part-of-speech and morphological feature annotations.
+This repository makes available the v1.0.1 release of the Talk of Norway (TON) dataset, a collection of Norwegian parliament speeches from the 1998-1999 to 2015-2016 sessions. Every speech is richly annotated with metadata pulled from different sources, and augmented with sentence, token, lemma, part-of-speech and morphological feature annotations.
 
 This work is inspired by the [Talk of Europe CLARIN campus](http://www.talkofeurope.eu/), and aims primarily at facilitating experimentation at the crossroads between quantitative Political Science and Natural Language Processing. The dataset is currently the core object of study of an interdisciplinary project involving the departments of Political Science and Informatics of the University of Oslo.
 
-For more information on the Talk of Norway project and its partecipants, please see the UiO project pages at [https://www.mn.uio.no/ifi/english/research/projects/ton/index.html](https://www.mn.uio.no/ifi/english/research/projects/ton/index.html)
+For more information on the Talk of Norway project and its participants, please see the UiO project pages at [https://www.mn.uio.no/ifi/english/research/projects/ton/index.html](https://www.mn.uio.no/ifi/english/research/projects/ton/index.html)
 
 ## Dataset v1.0
 
@@ -32,7 +32,7 @@ See [Data.md](Data.md) for more information on the variables.
 
 ## Get the data
 
-You can download the data from [http://ltr.uio.no/ton/ton.data.10.tgz](http://ltr.uio.no/ton/ton.data.10.tgz). The recommended way to stay up to date with this repository is to clone it and unpack the downloaded archive to its top-level directory.
+You can download the data from [http://ltr.uio.no/ton/ton.data.101.tgz](http://ltr.uio.no/ton/ton.data.10.tgz). The recommended way to stay up to date with this repository is to clone it and unpack the downloaded archive to its top-level directory.
 
 On most UNIX systems, you can type the following in your terminal:
 ```
