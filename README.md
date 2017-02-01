@@ -6,7 +6,7 @@ This work is inspired by the [Talk of Europe CLARIN campus](http://www.talkofeur
 
 For more information on the Talk of Norway project and its participants, please see the UiO project pages at [https://www.mn.uio.no/ifi/english/research/projects/ton/index.html](https://www.mn.uio.no/ifi/english/research/projects/ton/index.html)
 
-## Dataset v1.0
+## Dataset v1.0.1
 
 The data is split in two main parts: the `./data/ton.csv` file containing metadata (see [Data.md](Data.md) for a description of the available variables) along with the raw text of the speeches, and the `./data/annotations/` folder containing the linguistic annotations of the speeches. The annotations in this folder are linked to their respective metadata row in the csv file by way of their file name, which is the same as the id variable.
 
@@ -32,15 +32,15 @@ See [Data.md](Data.md) for more information on the variables.
 
 ## Get the data
 
-You can download the data from [http://ltr.uio.no/ton/ton.data.101.tgz](http://ltr.uio.no/ton/ton.data.10.tgz). The recommended way to stay up to date with this repository is to clone it and unpack the downloaded archive to its top-level directory.
+You can download the data from [http://ltr.uio.no/ton/ton.data.101.tar.gz](http://ltr.uio.no/ton/ton.data.10.tar.gz). The recommended way to stay up to date with this repository is to clone it and unpack the downloaded archive to its top-level directory.
 
 On most UNIX systems, you can type the following in your terminal:
 ```
 git clone https://github.com/emanlapponi/talk-of-norway
 cd talk-of-norway
-wget http://ltr.uio.no/ton/ton.data.10.tgz
-tar -xzf ton.data.10.tgz
-rm ton.data.tgz
+wget http://ltr.uio.no/ton/ton.data.101.tar.gz
+tar -xzf ton.data.101.tar.gz
+rm ton.data.tar.gz
 ```
 
 ## How to cite
