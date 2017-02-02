@@ -32,14 +32,14 @@ See [Data.md](Data.md) for more information on the variables.
 
 ## Get the data
 
-You can download the data from [http://ltr.uio.no/ton/ton.data.101.tar.gz](http://ltr.uio.no/ton/ton.data.10.tar.gz). The recommended way to stay up to date with this repository is to clone it and unpack the downloaded archive to its top-level directory.
+You can download the data from [http://ltr.uio.no/ton/ton.data.101.tgz](http://ltr.uio.no/ton/ton.data.101.tgz). The recommended way to stay up to date with this repository is to clone it and unpack the downloaded archive to its top-level directory.
 
 On most UNIX systems, you can type the following in your terminal:
 ```
 git clone https://github.com/emanlapponi/talk-of-norway
 cd talk-of-norway
-wget http://ltr.uio.no/ton/ton.data.101.tar.gz
-tar -xzf ton.data.101.tar.gz
+wget http://ltr.uio.no/ton/ton.data.101.tgz
+tar -xzf ton.data.101.tgz
 rm ton.data.tar.gz
 ```
 
