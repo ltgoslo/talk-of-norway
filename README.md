@@ -36,7 +36,7 @@ You can download the data from [http://ltr.uio.no/ton/ton.data.101.tgz](http://l
 
 On most UNIX systems, you can type the following in your terminal:
 ```
-git clone https://github.com/emanlapponi/talk-of-norway
+git clone https://github.com/ltgoslo/talk-of-norway
 cd talk-of-norway
 wget http://ltr.uio.no/ton/ton.data.101.tgz
 tar -xzf ton.data.101.tgz
