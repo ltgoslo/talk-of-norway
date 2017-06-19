@@ -1,5 +1,5 @@
 # Data sources
-The data are gathered from various sources. Most come from [Stortinget's own API](https://data.stortinget.no), a part of which were structured by [Holder de ord](https://www.holderdeord.no/portal) (see last seven variables of the table below). Additionally, several variables were scraped from the .html of various places on [Stortingets web page](https://stortinget.no). Variables on the cabinets and ministers are based on [Søyland (forthcoming)](TBA)
+The data are gathered from various sources. Most come from [Stortinget's own API](https://data.stortinget.no), a part of which were structured by [Holder de ord](https://www.holderdeord.no/portal) (see last seven variables of the table below). Additionally, several variables were scraped from the .html of various places on [Stortingets web page](https://stortinget.no). Variables on the cabinets and ministers are based on [Søyland (2017)](https://github.com/martigso/ministersNor).
 
 # Variable description
 
