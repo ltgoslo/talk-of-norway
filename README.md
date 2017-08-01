@@ -48,8 +48,8 @@ rm ton.data.tar.gz
 Publications connected to this dataset are forthcoming. For the time being, please use the following bit of bibtex to cite this work:
 
 ```
-@online{Soy:Lap:16,
-  author = {S{\o}yland, Martin G. and Lapponi, Emanuele},
+@online{Lap:Soy:16,
+  author = {Lapponi, Emanuele and S{\o}yland, Martin G.},
   title = {Talk of Norway},
   year = 2016,
   url = {https://github.com/ltgoslo/talk-of-norway},
