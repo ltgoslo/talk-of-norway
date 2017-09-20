@@ -2,10 +2,13 @@
 
 `ton.py` allows you to stream talk-of-norway speeches into python dictionaries, or serialize talk-of-norway speeches as json lines.
 
-installation:
+To install, run:
+
 ```
-python setup.py install
+pip install .
 ```
+
+If you don't have `pip` installed, follow [these instructions](https://pip.pypa.io/en/stable/installing/).
 
 Each dictionary (or json line object) contains one property per variable in the original talk-of-norway dataset; additionally, if invoked with a path to the folder containing the talk-of-norway linguistic annotations, it contains an `annotations` property, structured as follows:
 
