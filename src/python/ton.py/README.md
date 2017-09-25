@@ -58,5 +58,5 @@ The code above will print all speech ids, the speaker name and all tokens and pa
 To pack the linguistic annotations in each json object, simply provide a path to the annotations folder:
 
 ```
-python ton.py --annotations talk-of-norway/data/annotations talk-of-norway/data/ton.csv > ton.jsonlines
+python ton.py --annotations talk-of-norway/data/annotations talk-of-norway/data/ton.csv > ton.jsonl
 ```
