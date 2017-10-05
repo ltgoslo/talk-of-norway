@@ -1,2 +1,8 @@
+# Data
 data/
+
+# R-package 
 .Rproj.user
+.Rhistory
+.RData
+.Rbuildignore
