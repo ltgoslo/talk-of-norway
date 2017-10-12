@@ -35,8 +35,10 @@ F-score:
 \deqn{F = 2 * ((P * R) / (P + R))}
 }
 \examples{
-data(tonDemo)
+data("tonDemo")
+
 Fscores_maker(tonDemo, "party_id", "class_token")
+
 }
 \seealso{
 \code{\link[e1071]{svm}}
@@ -44,4 +46,3 @@ Fscores_maker(tonDemo, "party_id", "class_token")
 
 Other fscores: \code{\link{Fscores_boot}}
 }
-

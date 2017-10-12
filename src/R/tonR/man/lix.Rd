@@ -19,4 +19,3 @@ A function for calculating the LIX readability score
 \examples{
 # To be done
 }
-

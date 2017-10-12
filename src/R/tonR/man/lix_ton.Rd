@@ -38,4 +38,3 @@ summary(ap$lix)
 \seealso{
 \code{\link[tonR]{lix}}
 }
-

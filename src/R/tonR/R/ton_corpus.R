@@ -13,9 +13,19 @@
 #' @seealso \code{\link[corpus]{quanteda}}
 #'
 #' @examples
-#' test <- ton_corpus(tonFolder = "../talk-of-norway/", ids = c("tale000005", "tale000006"))
+#' # Reading specific speeches into corpus
+#' corpus <- ton_corpus(tonFolder = "../talk-of-norway/", ids = c("tale000005", "tale000006"))
+#'
 #' summary(test)
 #' quanteda::docnames(test)
+#'
+#' # Using ton data for specifying ids
+#' data("tonDemo")
+#' corpus <- ton_corpus(tonFolder = "../talk-of-norway/", ids = tonDemo$id[1:10])
+#'
+#' summary(test)
+#' quanteda::docnames(test)
+#'
 #' @export
 #'
 ton_corpus <- function(tonFolder, ids, feature_type = "token", cores = NULL){
@@ -42,11 +52,6 @@ ton_corpus <- function(tonFolder, ids, feature_type = "token", cores = NULL){
       gsubfn::gsubfn(" [[:punct:]] ", function(y) trimws(y, which = "left"), x)
     })
 
-    # From list to vector
-    texts <- unlist(texts)
-
-    # Create a corpus from the quanteda package
-    corpus <- quanteda::corpus(texts, docnames = ids)
   } else if(.Platform$OS.type == "unix"){
 
     # Setting cores to run on
@@ -80,12 +85,13 @@ ton_corpus <- function(tonFolder, ids, feature_type = "token", cores = NULL){
       gsubfn::gsubfn(" [[:punct:]] ", function(y) trimws(y, which = "left"), x)
     }, mc.cores = cores)
 
-    # From list to vector
-    texts <- unlist(texts)
-
-    # Create a corpus from the quanteda package
-    corpus <- quanteda::corpus(texts, docnames = ids)
 
   }
+
+  # From list to vector
+  texts <- unlist(texts)
+
+  # Create a corpus from the quanteda package
+  corpus <- quanteda::corpus(texts, docnames = ids)
   return(corpus)
 }

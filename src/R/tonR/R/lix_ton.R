@@ -26,53 +26,92 @@
 #'
 #' @export
 #'
-lix_ton <- function(ids, ton_path = "../talk-of-norway/", cores = 1){
-  if(Sys.info()["sysname"] == "Linux"){
-    require(pbmcapply)
-    lix_prep <- pbmclapply(ids, function(x){
-      tmp <- read.conll(ton_path, x, "all")
-      tmp$id_holder <- x
+lix_ton <- function(ids, ton_path = "../../..", cores = 1){
+  if(.Platform$OS.type == "unix"){
+    if(all(c("pbmcapply", "dplyr") %in% rownames(installed.packages()))){
 
-      tmp <- tmp %>% group_by(id_holder, sentence) %>% mutate(n_words = max(index))
+      library(pbmcapply);library(dplyr)
 
-      tmp <- tmp %>%
-        group_by(id_holder) %>%
-        summarise(n_words = length(which(grepl("\\$", lemma) == FALSE)),
-                  long_words = length(which(nchar(token[which(grepl("\\$", lemma) == FALSE)]) > 6)),
-                  # breaks = length(which(grepl("\\$", lemma) == TRUE)),
-                  sentences = max(sentence))
+      lix_prep <- pbmclapply(ids, function(x){
+        tmp <- read.conll(ton_path, x, "all")
+        # tmp$id_holder <- x
 
+        tmp <- tmp %>% group_by(id, sentence) %>% mutate(n_words = max(index))
 
-      tmp$lix <- lix(n_words = tmp$n_words, n_breaks = tmp$sentences, n_longwords = tmp$long_words)
+        tmp <- tmp %>%
+          group_by(id) %>%
+          summarise(n_words = length(which(grepl("\\$", lemma) == FALSE)),
+                    long_words = length(which(nchar(token[which(grepl("\\$", lemma) == FALSE)]) > 6)),
+                    # breaks = length(which(grepl("\\$", lemma) == TRUE)),
+                    sentences = max(sentence))
 
-      return(tmp)
+        tmp$lix <- lix(n_words = tmp$n_words, n_breaks = tmp$sentences, n_longwords = tmp$long_words)
 
-    }, mc.cores = cores)
+        tmp <- data.frame(tmp, stringsAsFactors = FALSE)
 
-    lix_prep <- do.call("rbind", lix_prep)
+        return(tmp)
 
-  } else {
+      }, mc.cores = cores)
+    }
+  } else if("dplyr" %in% rownames(installed.packages())){
+    warning(paste("Parallel computing not supported on", .Platform$OS.type, "at the momemnt. Computational time will be higher on non-unix systems."))
+    library(dplyr)
     lix_prep <- lapply(ids, function(x){
-      tmp <- read.conll(ton_path, x, "all")
-      tmp$id_holder <- x
 
-      tmp <- tmp %>% group_by(id_holder, sentence) %>% mutate(n_words = max(index))
+      tmp <- read.conll(ton_path, x, "all")
+
+      tmp <- tmp %>% group_by(id, sentence) %>% mutate(n_words = max(index))
 
       tmp <- tmp %>%
-        group_by(id_holder) %>%
+        group_by(id) %>%
         summarise(n_words = length(which(grepl("\\$", lemma) == FALSE)),
                   long_words = length(which(nchar(token[which(grepl("\\$", lemma) == FALSE)]) > 6)),
                   # breaks = length(which(grepl("\\$", lemma) == TRUE)),
                   sentences = max(sentence))
 
-
       tmp$lix <- lix(n_words = tmp$n_words, n_breaks = tmp$sentences, n_longwords = tmp$long_words)
+
+      tmp <- data.frame(tmp, stringsAsFactors = FALSE)
 
       return(tmp)
 
     })
 
-    lix_prep <- do.call("rbind", lix_prep)
+  } else {
+    warning("Using for loops. To decrease computational time, please install the \"dplyr\" package.")
+    lix_prep <- lapply(ids, function(x){
+      tmp <- read.conll(ton_path, x, "all")
+
+      tmp$n_words <- NA
+      tmp$long_words <- NA
+
+      for(i in 1:nrow(tmp)){
+        tmp$n_words[i] <- length(which(grepl("\\$", tmp$lemma[which(tmp$sentence == tmp$sentence[i])]) == FALSE))
+        tmp$long_words[i] <- sum(ifelse(nchar(tmp$token) > 6, 1, 0)[which(tmp$sentence == tmp$sentence[i])], na.rm = TRUE)
+      }
+
+      n_words <- integer()
+      long_words <- integer()
+
+      for(i in 1:length(unique(tmp$sentence))){
+        n_words[i] <- unique(tmp$n_words[which(tmp$sentence == unique(tmp$sentence)[i])])
+        long_words[i] <- unique(tmp$long_words[which(tmp$sentence == unique(tmp$sentence)[i])])
+      }
+
+      tmp <- data.frame(id = unique(tmp$id),
+                        n_words = sum(n_words),
+                        long_words = sum(long_words),
+                        sentences = max(tmp$sentence),
+                        stringsAsFactors = FALSE)
+
+      tmp$lix <- lix(n_words = tmp$n_words, n_breaks = tmp$sentences, n_longwords = tmp$long_words)
+
+      return(tmp)
+    })
+
   }
+
+  lix_prep <- do.call("rbind", lix_prep)
+
   return(lix_prep)
 }

@@ -4,31 +4,45 @@
 \alias{Fscores_boot}
 \title{Bootstrap F_1 scores based on SVM evaluations}
 \usage{
-Fscores_boot(data, actual, pred, subset_rows, nsim = 1000, seed = 8949, cores = 1)
+Fscores_boot(data, actual, pred, sample_divider = 2, nsim = 1000, seed = 8949, cores = 1)
 }
 \arguments{
-\item{data}{Data frame containing the actual and predicted values of the property under consideration}
+\item{data}{Data frame containing the actual and predicted values of the property under consideration.
+If NULL, \code{actual} and \code{pred} must be vectors containing the classification experiment labels.}
 
-\item{actual}{Character string of the column name of the the actual values of the property under consideration}
+\item{actual}{Character string of the column name of the the actual values of the property under consideration.}
 
 \item{pred}{Character string of the column name of the the predicted values of the property under consideration.
 Must be same length as \code{actual}.}
 
-\item{nsim}{Integer specifying number of bootstraps to do.}
+\item{sample_divider}{Numeric value specifying how much to divide the input data by for each draw.}
 
-\item{cores}{Integer specifying number of cores to simulate on. For Linux users only...sorry Windows.}
+\item{nsim}{Integer specifying number of draws.}
 
-\item{subset_rows}{A vector containing the rownames for the data to bootstrap. For full data use \code{subset_rows = rownames(data)}}
+\item{cores}{Integer specifying number of cores to simulate on. For unix users only.}
+}
+\value{
+Returns a list with all .....
 }
 \description{
 A function for calculating F_1 scores based on SVM evaluations
 }
 \examples{
-# To be done
+data(tonDemo)
+
+# Bootstrapping with default values on demo data
+bootstrap <- Fscores_boot(tonDemo, "party_id", "class_ngrams_pos_meta")
+bootstrap$f1_full_data
+bootstrap$f1_sims_conf
+
+# Bootstrapping with different sample divider and number of draws
+bootstrap <- Fscores_boot(tonDemo, "party_id", "class_ngrams_pos_meta", sample_divider = 1.1, nsims = 100)
+bootstrap$f1_full_data
+bootstrap$f1_sims_conf
+
 }
 \seealso{
 \code{\link[e1071]{svm}}
 
 Other fscores: \code{\link{Fscores_maker}}
 }
-

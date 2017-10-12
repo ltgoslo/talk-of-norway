@@ -29,8 +29,10 @@
 #'          \code{\link[tonR]{Fscores_boot}}
 #'
 #' @examples
-#' data(tonDemo)
+#' data("tonDemo")
+#'
 #' Fscores_maker(tonDemo, "party_id", "class_token")
+#'
 #' @export
 #'
 Fscores_maker <- function(data = NULL, actual, pred, parties = FALSE){
@@ -38,6 +40,9 @@ Fscores_maker <- function(data = NULL, actual, pred, parties = FALSE){
   if(any((class(data) == "data.frame") == FALSE)){
     data <- as.data.frame(data, stringsAsFactors = FALSE)
   }
+
+  data <- data[which(data[, pred] %in% unique(data[, actual])), ]
+  data <- data[which(data[, actual] %in% unique(data[, pred])), ]
 
   if(is.null(data) == FALSE & parties == TRUE){
 

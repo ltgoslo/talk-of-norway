@@ -20,11 +20,20 @@ a object of class corpus containing the speeches specified by the \code{ids} val
 A function for reading selected ToN texts to a corpus. Builds on
 }
 \examples{
-test <- ton_corpus(tonFolder = "../talk-of-norway/", ids = c("tale000005", "tale000006"))
+# Reading specific speeches into corpus
+corpus <- ton_corpus(tonFolder = "../talk-of-norway/", ids = c("tale000005", "tale000006"))
+
 summary(test)
 quanteda::docnames(test)
+
+# Using ton data for specifying ids
+data("tonDemo")
+corpus <- ton_corpus(tonFolder = "../talk-of-norway/", ids = tonDemo$id[1:10])
+
+summary(test)
+quanteda::docnames(test)
+
 }
 \seealso{
 \code{\link[corpus]{quanteda}}
 }
-

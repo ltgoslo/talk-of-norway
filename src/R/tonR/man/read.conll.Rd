@@ -11,10 +11,12 @@ read.conll(tonFolder, id, keep = "all", rmStopwords = TRUE, rmLength = 1000)
 
 \item{id}{Character string specifying id of the file to read into R.}
 
-\item{keep}{Character string that specifies what parts-of-speech should be returned. Possible values are:
+\item{keep_pos}{Character string that specifies what parts-of-speech should be returned. Possible values are:
 "subst", "verb", "sbu", "prep", "det", "adj", "clb", "adv", "pron", "<komma>", "konj".}
 
 \item{rmWords}{Character vector of either "no" or of words to remove.}
+
+\item{keep_features}{Character string specifying which features to extract. Defaults to c("", "", "", "", "",)}
 }
 \value{
 A data frame of the ToN speech specified by \code{id}, with sentence and token boundries, tokens, lemmatized
@@ -26,14 +28,14 @@ in the Norwegian parliament (1998-2016). Works as a wrapper for \code{\link[util
 }
 \examples{
 # If the 'talk-of-norway' repository is placed in the folder below the tonR-package
-speech <- read.conll("../talk-of-norway/data/annotations/tale100001.tsv")
+speech <- read.conll("../talk-of-norway/", "tale100001")
 barplot(table(speech$part_of_speech))
 
 # Loading a subset of speeches using several ToN id tags
 data("tonDemo")
 
 texts <- lapply(tonDemo$id[1:10], function(x){
-  read.conll(tonFolder = "../talk-of-norway/", id = x, keep = "adj")
+  read.conll(tonFolder = "../talk-of-norway/", id = x, keep_pos = "adj")
 })
 lapply(texts, head)
 
@@ -41,4 +43,3 @@ lapply(texts, head)
 \seealso{
 \code{\link[utils]{read.csv}}
 }
-
