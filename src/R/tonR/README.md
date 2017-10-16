@@ -8,5 +8,5 @@ The package can be installed through *devtools* with the `install_github()` func
 devtools::install_github("ltgoslo/talk-of-norway/src/R/tonR")
 
 # Load demo dataset
-data("tonDemo")
+data("tonDemo", package = "tonR")
 ```
