@@ -2,9 +2,15 @@
 
 This repository makes available the v1.0.1 release of the Talk of Norway (TON) dataset, a collection of Norwegian parliament speeches from the 1998-1999 to 2015-2016 sessions. Every speech is richly annotated with metadata pulled from different sources, and augmented with sentence, token, lemma, part-of-speech and morphological feature annotations.
 
-This work is inspired by the [Talk of Europe CLARIN campus](http://www.talkofeurope.eu/), and aims primarily at facilitating experimentation at the crossroads between quantitative Political Science and Natural Language Processing. The dataset is currently the core object of study of an interdisciplinary project involving the departments of Political Science and Informatics of the University of Oslo.
+This work is inspired by the [Talk of Europe CLARIN campus](http://www.talkofeurope.eu/), and aims primarily at facilitating experimentation at the crossroads between quantitative Political Science and Natural Language Processing. The dataset represents a collaborative effort between the Department of Political Science and the Department of Informatics at the University of Oslo.
 
-For more information on the Talk of Norway project and its participants, please see the UiO project pages at [https://www.mn.uio.no/ifi/english/research/projects/ton/index.html](https://www.mn.uio.no/ifi/english/research/projects/ton/index.html)
+For more information, please see the accompanying paper: 
+
+Emanuele Lapponi, Martin G. Søyland, Erik Velldal and Stephan Oepen  
+_The Talk of Norway: A Richly Annotated Corpus of the Norwegian Parliament, 1998–2016_ 
+Language Resources and Evaluation, 13 February 2018, pp 1–21 (Open Access)  
+Springer, 2018  
+https://www.mn.uio.no/ifi/english/research/projects/ton/index.html
 
 ## Dataset v1.0.1
 
@@ -45,16 +51,23 @@ rm ton.data.tar.gz
 
 ## How to cite
 
-Publications connected to this dataset are forthcoming. For the time being, please use the following bit of bibtex to cite this work:
+If you use or reference this resource, please cite the following publication ([url](https://link.springer.com/article/10.1007/s10579-018-9411-5)): 
 
 ```
-@online{Lap:Soy:16,
-  author = {Lapponi, Emanuele and S{\o}yland, Martin G.},
-  title = {Talk of Norway},
-  year = 2016,
-  url = {https://github.com/ltgoslo/talk-of-norway},
-  urldate = {2016-10-29}
+@Article{LapSoyVel18,
+  author = {Lapponi, Emanuele and S{\o}yland, Martin G. 
+            and Velldal, Erik and Oepen, Stephan},
+  title = {The {T}alk of {N}orway: a richly annotated corpus of 
+           the {N}orwegian parliament, 1998--2016},
+  journal = {{L}anguage {R}esources and {E}valuation},
+  year = 2018,
+  publisher = {Springer},
+  pages = {1--21}, 
+  month = 2,
+  issn = {1574-020X},
+  doi = {10.1007/s10579-018-9411-5}
 }
+
 ```
 
 ## License
