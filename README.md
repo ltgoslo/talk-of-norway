@@ -7,7 +7,7 @@ This work is inspired by the [Talk of Europe CLARIN campus](http://www.talkofeur
 For more information, please see the accompanying paper: 
 
 Emanuele Lapponi, Martin G. Søyland, Erik Velldal and Stephan Oepen  
-_The Talk of Norway: A Richly Annotated Corpus of the Norwegian Parliament, 1998–2016_ 
+_The Talk of Norway: A Richly Annotated Corpus of the Norwegian Parliament, 1998–2016_  
 Language Resources and Evaluation, 13 February 2018, pp 1–21 (Open Access)  
 Springer, 2018  
 https://link.springer.com/article/10.1007/s10579-018-9411-5
