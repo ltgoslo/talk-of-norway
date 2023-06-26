@@ -44,9 +44,9 @@ On most UNIX systems, you can type the following in your terminal:
 ```
 git clone https://github.com/ltgoslo/talk-of-norway
 cd talk-of-norway
-wget http://ltr.uio.no/ton/ton.data.101.tgz
-tar -xzf ton.data.101.tgz
-rm ton.data.tar.gz
+wget https://www.velldal.net/erik/data/ton101.tar.gz
+tar -xzf ton101.tar.gz
+rm ton101.tar.gz
 ```
 
 ## How to cite
